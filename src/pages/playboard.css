@@ -1,0 +1,188 @@
+
+.playboard{
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.board{
+    width: 1000px;
+    height: 450px;
+    border: 13px solid rgb(39, 129, 23); 
+    background-color: rgb(4, 75, 4);
+    border-radius: 250px;
+    position: relative;
+    
+
+}
+
+.board-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1060px;
+    height: 510px;
+    background-color:rgb(0, 0, 0);
+    border-radius: 250px;
+}
+.card{
+    width: 100px;
+    height: 120px;
+
+
+  
+ 
+}
+
+.boards-cards-div{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flop-card0{
+    
+   
+}
+.flop-card1{
+  
+}
+
+.flop-card2{
+ 
+}
+
+.cards-div{
+    width: 50px;
+    height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-card{
+    left: 50%;
+    transform: translateX(50%);
+  
+    
+}
+.second-card{
+   z-index: 3;
+}
+.player {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 5px solid rgb(39, 129, 23);
+    position: absolute;
+}
+
+/* Positioning the 4 players around the board */
+.player-1 {
+    top: -30px; /* Above the poker table */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.player-2 {
+    bottom: -30px; /* Below the poker table */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.player-4 {
+    top: 50%;
+    left: -30px; /* Left side of the poker table */
+    transform: translateY(-50%);
+}
+
+.player-3 {
+    top: 50%;
+    right: -30px; /* Right side of the poker table */
+    transform: translateY(-50%);
+}
+
+.player-name{
+    color: black;
+}
+.card-imagine{
+    width: 50px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+.card-imagine-div{
+    display: flex;
+    gap: 10px;
+}
+.panel{
+    width: 350px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-btn{
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(100, 91, 91), rgb(0, 0, 0));
+    border-radius: 5px;
+    color: #fff;
+    font-size: 30px;
+    border: 2px solid black;
+}
+
+.panel-btn:hover{
+    cursor: pointer;
+}
+
+
+
+
+.position-0 {
+    bottom: -30px; /* Below the poker table */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.position-1 {
+    top: -30px; /* Above the poker table */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.position-2 {
+    top: 50%;
+    left: -30px; /* Left side of the poker table */
+    transform: translateY(-50%);
+}
+
+.position-3 {
+    top: 50%;
+    right: -30px; /* Right side of the poker table */
+    transform: translateY(-50%);
+}
+
+.pot{
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    color: #fff;
+    z-index: 8;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    background-color: rgba(0, 0, 0, 0.6);
+}

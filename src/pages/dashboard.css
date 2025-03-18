@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(44, 37, 37);
+    
+}
+.body-dashboard{
+    padding: 2%;
+}
+h2{
+    text-align: start;
+}
+
+.games-div{
+
+    display: flex;
+    height: 300px;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.poker-div{
+    height: 250px;
+    width: 250px;
+  
+}
+.poker-out-div:hover{
+    cursor: pointer;
+}
