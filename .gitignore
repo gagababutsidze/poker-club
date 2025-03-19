@@ -8,3 +8,4 @@ package-lock.json
 
 # Build ფოლდერი (ჰოსტინგზე ავტომატურად გენერირდება)
 build/
+.vercel
