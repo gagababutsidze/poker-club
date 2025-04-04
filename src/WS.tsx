@@ -16,7 +16,7 @@ export const WebSocketProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     const connect = () => {
         if (socket) return; // Avoid duplicate connections
 
-        const ws = new WebSocket("wss://poker-club-backend-production.up.railway.app");
+        const ws = new WebSocket("wss://poker-club-backend.onrender.com/");
 
         ws.onopen = () => console.log("WebSocket Connected");
         ws.onclose = () => console.log("WebSocket Disconnected");

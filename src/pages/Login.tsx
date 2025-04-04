@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const sendData = () => {
-    axios.post('https://poker-club-backend-production.up.railway.app/api/login', { email, password })
+    axios.post('https://poker-club-backend.onrender.com/api/login', { email, password })
       .then(response => {
         console.log(response.data);
         // Store token and navigate to playboard page

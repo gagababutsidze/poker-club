@@ -16,9 +16,6 @@ const Playboard = () => {
     const [mySecondCard, setMySecondCard] = useState<any | null>(null); 
     const [isVisible, setIsVisible] = useState<any | undefined>(false)
     const [flopCards, setFlopCard1] = useState< any[]>();
-
-    const connection = useRef<WebSocket | null>(null);
-
     const playerName = window.localStorage.getItem('playerName');
     const tableId = window.localStorage.getItem('tableId');
 
