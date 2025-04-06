@@ -15,6 +15,8 @@ const Login = () => {
         // Store token and navigate to playboard page
         window.localStorage.setItem('token', response.data.token);
         window.localStorage.setItem('playerName', response.data.email)
+        window.localStorage.setItem('username', response.data.username)
+        window.localStorage.setItem('id', response.data.id)
         navigate('/'); // Redirect to playboard page after login
       })
       .catch(error => {

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import PokerComponent from './PokerComponent';
 import Header from './Header';
 import GamesComponent from './GamesComponent';
+import ProfileComponent from './ProfileComponent';
 
 const Dashboard = () => {
 
@@ -25,7 +26,7 @@ const Dashboard = () => {
         <GamesComponent/>
 
          {
-                   isVisible ? <div className='profile-div'></div> 
+                   isVisible ? <ProfileComponent/>
                     : null }
 
       </div>

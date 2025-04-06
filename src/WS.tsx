@@ -16,7 +16,9 @@ export const WebSocketProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     const connect = () => {
         if (socket) return; // Avoid duplicate connections
 
-        const ws = new WebSocket("wss://poker-club-backend.onrender.com/");
+         const token = localStorage.getItem("token"); // ან საიდანაც გაქვს შენახული
+         const ws  = new WebSocket(`wss://poker-club-backend.onrender.com/?token=${token}`);
+        
 
         ws.onopen = () => console.log("WebSocket Connected");
         ws.onclose = () => console.log("WebSocket Disconnected");
