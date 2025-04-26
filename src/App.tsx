@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import Login from './pages/Login';
 import Playboard from './pages/Playboard';
 import Dashboard from './pages/Dashboard';
+import PokerComponent from './pages/PokerComponent';
 //import { WebSocketProvider } from './WebSocketContext';
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/" element={<Dashboard />} />
             <Route path="/play/:id" element={isAuthenticated ? <Playboard /> : <Navigate to="/login" />} />
              <Route path="/login" element={isAuthenticated ? <Navigate to="/play" /> : <Login />} />
+            
             </Routes>
        
     );

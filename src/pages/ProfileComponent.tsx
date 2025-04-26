@@ -35,8 +35,8 @@ const ProfileComponent = () => {
 
     return(
         <div className="profile-div">
-            <div>{name}</div>
-          <div>{email}</div>
+            <p>{name}</p>
+          <p>{email}</p>
 
         </div>
     )

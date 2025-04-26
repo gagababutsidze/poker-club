@@ -13,11 +13,12 @@ const GamesComponent = () => {
 
     return(
         <div className='games-div'>
+            
             <div onClick={handleClick} className='poker-out-div'>
                 <div className='poker-div'>
                 <img src={require('../assets/poker.webp')} alt='poker' />
             </div>
-            <h3>poker</h3>
+            <h3>პოკერი</h3>
             </div>
       
            
@@ -26,6 +27,8 @@ const GamesComponent = () => {
                 <PokerComponent />
             </div>
             )}
+
+
         </div>
     )
 }

@@ -169,10 +169,10 @@ const Playboard = () => {
                     <div className='player player-2'>
                     <div className='cards-div'>
     {myCards?.image_path && (
-        <img className='card first-card' src={`https://poker-club-backend-production.up.railway.app/cards/${myCards.image_path}`} alt="ggg" />
+        <img className='card first-card' src={`https://poker-club-backend.onrender.com/cards/${myCards.image_path}`} alt="ggg" />
     )}
     {mySecondCard?.image_path && (
-        <img className='card first-card' src={`https://poker-club-backend-production.up.railway.app/cards/${mySecondCard.image_path}`} alt="gggg" />
+        <img className='card first-card' src={`https://poker-club-backend.onrender.com/cards/${mySecondCard.image_path}`} alt="gggg" />
     )}
 </div>
 
@@ -205,7 +205,7 @@ const Playboard = () => {
                     <div className='boards-cards-div'>
     {flopCards&& flopCards.length > 0 &&
         flopCards?.map((card:any, index:any) => (
-            <img key={index} className={`card flop-card${index}`}src={`https://poker-club-backend-production.up.railway.app/cards/${card.image_path}`} alt="" />
+            <img key={index} className={`card flop-card${index}`}src={`https://poker-club-backend.onrender.com/cards/${card.image_path}`} alt="" />
         ))
     }
 </div>
